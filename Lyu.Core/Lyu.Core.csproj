@@ -49,14 +49,53 @@
     <Compile Include="AssemblyExtensions.cs" />
     <Compile Include="Attempt.cs" />
     <Compile Include="Attempt{T}.cs" />
+    <Compile Include="Configuration\CommaDelimitedConfigurationElement.cs" />
+    <Compile Include="Configuration\InnerTextConfigurationElement.cs" />
+    <Compile Include="Configuration\IUmbracoConfigurationSection.cs" />
+    <Compile Include="Configuration\UmbracoConfig.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ContentElement.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ContentImagingElement.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IChar.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IContentErrorPage.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IContentSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IDeveloperSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IDistributedCallSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IFileExtension.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IHelpSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IImagingAutoFillUploadField.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ILink.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ILoggingSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ILogType.cs" />
+    <Compile Include="Configuration\UmbracoSettings\INotDynamicXmlDocument.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IProvidersSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IRazorStaticMapping.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IRepositoriesSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IRepository.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IRequestHandlerSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IScheduledTask.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IScheduledTasksSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IScriptingSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ISecuritySection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IServer.cs" />
+    <Compile Include="Configuration\UmbracoSettings\ITemplatesSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IUmbracoSettingsSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IViewStateMoverModuleSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\IWebRoutingSection.cs" />
+    <Compile Include="Configuration\UmbracoSettings\UmbracoSettingsSection.cs" />
     <Compile Include="IfExtensions.cs" />
     <Compile Include="IO\IOHelper.cs" />
     <Compile Include="IO\SystemDirectories.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\LoggerExtensions.cs" />
+    <Compile Include="Logging\LoggerResolver.cs" />
+    <Compile Include="Logging\LogHelper.cs" />
+    <Compile Include="MacroErrorBehaviour.cs" />
     <Compile Include="ObjectResolution\ResolverBase.cs" />
     <Compile Include="ObjectResolution\ResolverCollection.cs" />
     <Compile Include="ObjectResolution\SingleObjectResolverBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadLock.cs" />
+    <Compile Include="RenderingEngine.cs" />
     <Compile Include="Resolution.cs" />
     <Compile Include="ShortStringHelperResolver.cs" />
     <Compile Include="StringExtensions.cs" />
@@ -67,6 +106,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

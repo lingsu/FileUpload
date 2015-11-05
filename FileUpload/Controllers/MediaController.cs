@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using System.Web.Http;
+using Lyu.Core.Configuration;
 using Lyu.Core.IO;
 using Lyu.Web.Models;
 using Lyu.Web.Models.ContentEditing;
@@ -45,7 +46,17 @@ namespace FileUpload.Controllers
             }
 
             var tempFiles = new PostedFiles();
+            //get the files
+            foreach (var file in result.FileData)
+            {
+                var fileName = file.Headers.ContentDisposition.FileName.Trim(new[] { '\"' });
+                var ext = fileName.Substring(fileName.LastIndexOf('.') + 1).ToLower();
 
+                if (UmbracoConfig.For.UmbracoSettings().Content.DisallowedUploadFiles.Contains(ext) == false)
+                {
+
+                }
+            }
         }
 
         /// <summary>
